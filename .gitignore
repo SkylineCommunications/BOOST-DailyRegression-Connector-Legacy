@@ -1,0 +1,5 @@
+QAction_*/bin/*
+QAction_*/obj/*
+**/.vs/*
+packages/*
+**/.svn
