@@ -34,7 +34,7 @@ jobs:
         run: dotnet tool install -g Skyline.DataMiner.CICD.Tools.DataMinerDeploy
 
       - name: Deploy to DataMiner
-        run: dataminer-package-deploy from-catalog --catalog-id "b84746d1-cebc-42e9-bdc4-576ee2de2eb4" --catalog-version "${{ github.ref_name }}" --dm-catalog-token ${{ secrets.DATAMINER_TOKEN }} --agent-destination-id ${{ secrets.AGENT_DESTINATION_ID }}
+        run: dataminer-package-deploy from-catalog --catalog-id "46fb5716-b1fe-4852-a676-dacde0de8870" --catalog-version "${{ github.ref_name }}" --dm-catalog-token ${{ secrets.DATAMINER_TOKEN }} --agent-destination-id ${{ secrets.AGENT_DESTINATION_ID }}
 
   CD-Volatile:
     if: github.ref_type == 'tag'
